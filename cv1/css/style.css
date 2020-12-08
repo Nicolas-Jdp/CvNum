@@ -1,0 +1,265 @@
+/*Général*/
+*{
+   font-family: Avenir, sans-serif;
+   padding: 0px;
+   margin: 0px;
+   text-align: justify;
+   box-sizing: border-box;
+}
+body{
+   background: rgba(40, 85, 99, 0.548);
+}
+p{
+   font-size: 1em;
+   line-height: 1.5em;
+}
+a{
+   text-decoration: none;
+   color: #000;
+}
+
+#sect2, #sect3, #sect4, #sect5, #sect6{ 
+   display: none;
+}
+
+/*Header*/
+header{
+   width: 100%;
+   padding: 20px 0px;
+   box-shadow: 0px 0px 15px #333;
+   border-bottom: 1px solid #fff;
+   background: url("../images/back3.PNG") #4f4f4f;
+   height: 120px;
+}
+header h1{
+   color: white;
+   font-size: 1.5em;
+   width: 90%;
+   margin: 0 auto;
+   text-align: center;
+}
+
+/*Style sections*/
+section{
+   display: flex; 
+   flex-flow: row wrap;
+   justify-content: center;
+   width: 100%;
+   padding-bottom: 20px;
+   margin: 20px auto;
+   box-shadow: 0px 0px 10px #bbb;
+   background-color: #fff;
+}
+
+section h2{
+   margin: 20px 0;
+   width: 90%;
+}
+section > div{
+   width: 90%;
+}
+
+/*Présentation + Infos*/
+.photo{
+   text-align: center;
+}
+.photo img{
+   width: 150px;
+   height: 150px;
+   border: 1.5px solid #fff;
+   box-shadow: 0px 0px 10px #777;
+   border-radius: 50%;
+   margin-top: -80px;
+}
+.presentation{
+   border-bottom: 2px dashed #ccc;
+}
+.presentation a{
+   display: block;
+   text-align: center;
+   padding: 10px;
+   margin: 10px auto 30px auto;
+   color: #fff;
+   background-color: rgba(48, 3, 119, 0.616);
+   box-shadow: 0px 0px 10px #ccc;
+   border-radius: 20px;
+   width: 50%;
+}
+.contact1{
+   display: flex;
+   flex-flow: row wrap;
+   align-items: center;
+}
+.contact1 p:first-child{
+   flex: 0 0 40%;
+}
+.contact1 p:last-child{
+   flex: 0 0 60%;
+}
+.social{
+   display: flex;
+   justify-content: space-around;
+   margin: 10px auto 0px auto;
+}
+.social img{
+   width: 40px;
+   height: 40px;
+}
+
+/*Bouttons*/
+.bouttons{
+   text-align: center;
+}
+
+.bouttons figcaption{
+   color: whitesmoke;
+}
+
+#button2, #button3, #button4 , #button5, #button6{
+   border-radius: 50%;
+}
+
+/*Expériences et Formation*/
+.exp{
+   display: flex;
+   flex-flow: row wrap;
+   border-bottom: 1px solid #bbb;
+   padding-bottom: 10px;
+   margin-bottom: 10px;
+}
+.exp-info{
+   display: flex;
+   flex-flow: column wrap;
+   flex: 0 0 70%;
+   margin-left: auto;
+}
+.exp-logo{
+   flex: 0 0 25%;
+   max-width: 100px;
+}
+.exp img{
+   width: 100%;
+}
+.exp h3{
+   font-size:  1.2em;
+}
+.exp h4{
+   font-size:  1em;
+   font-weight: normal;
+}
+
+/*Compétences*/
+.h3gauche{
+   width: 90%;
+}
+.pro .comp{
+   display:flex;
+   flex-flow: row wrap;
+   margin-bottom: 10px;
+}
+.comp p{
+   flex: 0 0 50%;
+}
+.perso .comp{
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-between;
+}
+
+/*Centres d'intérêt*/
+.interet{
+   display: inline-block;
+   text-align: center;
+   margin: 10px 20px;
+}
+.interet img{
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   box-shadow: 0px 0px 15px #555;
+}
+.centrer, .interet figcaption{
+   text-align: center;
+}
+
+/*Envoi Mail*/
+.inputstyle{
+   margin-bottom: 10px;
+   border-color: rgba(48, 3, 119, 0.616) ;
+}
+
+textarea {
+   max-width: 100%;
+}
+
+.submitstyle{
+   color: whitesmoke;
+   background-color: rgba(48, 3, 119, 0.616);
+   box-shadow: 0px 0px 10px #ccc;
+   border-radius: 12%;
+}
+
+
+/*Footer*/
+footer{
+   width: 100%;
+   padding: 20px 0px;
+   box-shadow: 0px 0px 15px #333;
+   border-top: 1px solid #fff;
+   background: url("../images/back4.PNG");
+}
+footer p{
+   width: 90%;
+   margin: 0 auto;
+   color: #fff;
+   text-align: center;
+}
+footer a, #refs{
+   color: steelblue;
+}
+
+/*VERSION BUREAU DU CV*/
+@media screen and (min-width: 980px){
+   section{
+       width: 80%;
+       box-shadow: 0px 0px 10px #bbb;
+   }
+   a:hover{
+       color: rgba(48, 3, 119, 0.616);
+   }
+   header h1{
+       width: 80%;
+   }
+   .presentation, .contact{
+       flex: 0 0 45%;
+   }
+   .presentation{
+       border-bottom: none;
+       border-right: 2px solid #ccc;
+       padding-right: 20px;
+       margin-left: auto;
+   }
+   .contact{
+       padding-left: 20px;
+       margin-right: auto;
+   }
+   .presentation a{
+       border: 2px solid transparent;
+   }
+   .presentation a:hover, .submitstyle:hover{
+      color: rgba(48, 3, 119, 0.616);
+      background-color: #fff;
+      border: 2px solid rgba(48, 3, 119, 0.616);
+      box-shadow: 0px 0px 10px #666;
+   }
+   .exp-logo{
+       flex: 0 0 10%;
+   }
+   .exp-info, .exp-desc{
+       flex: 0 0 85%;
+       margin-left: auto;
+   }
+   .interet{
+       flex: 0 1 25%;
+   }
+}
